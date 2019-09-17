@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+            let arr = [-246, 753, -468, 475, -683, 476, -583, 746, -581];
+            let result = 0;
+
+            arr.forEach(function(item, i, arr){
+                result += item;
+            });
+            console.log(result);
+
+            result = arr.filter(element => element < 0);
+            console.log(result);
+
+            result = arr.map(function(item, i, arr){
+                return item/2;
+            });
+            console.log(result);
+
+            result = 0;
+            arr.forEach(function(item, i, arr){
+                if (item >= 0){
+                    result += item * 2;
+                }else{
+                    result += item / 2;
+                };
+            });
+            console.log(result);
+
+
+    </script>
+</body>
+</html>
